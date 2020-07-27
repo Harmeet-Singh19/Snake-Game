@@ -42,7 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
         (currentSnake[0] - width < 0 && direction === -width) ||  //if snake hits the top
         squares[currentSnake[0] + direction].classList.contains('snake') //if snake goes into itself
       ) {
-          alert('You lost the game, better luck next time!! :)')
+
+          alert('You lost the game  better luck next time!! :)')
+          
           startGame()
         return clearInterval(interval) //this will clear the interval if any of the above happen
       }
