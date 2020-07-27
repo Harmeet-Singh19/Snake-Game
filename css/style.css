@@ -1,0 +1,144 @@
+body,html{
+  height: 100%;
+  overflow: hidden;
+}
+.b-img{
+  background-image: url('back-5.jpg');
+  -webkit-background-size:cover;
+ background-repeat: no-repeat;
+ background-size: cover;
+ filter: blur(1.5px);
+ height: 100%;
+
+}
+.title{
+position: absolute;
+top: 10%;
+  right: 1%;
+  margin-top: 200px;
+  width: 400px;
+  font-size: 300%;
+  background-color: #7f53ac;
+background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+border: 4px solid;
+  color: yellow;
+  font-weight: 500;
+  text-transform: capitalize;
+  justify-content: center;
+  align-content: center;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 0;
+
+}
+.title>span{
+  font-size: 75%;
+  font-weight: 100;
+}
+
+.top{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.btn{
+  width: 200px;
+  height: 60px;
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  border: 4px solid;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+}
+
+.btn::before,.btn::after{
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: #353b48;
+  transform: skewX(50deg);
+  transition: .4s linear;
+}
+.btn:hover{
+  background-color: white;
+  
+}
+
+.btn::before{
+  top: -4px;
+  left: 10%;
+}
+
+.btn::after{
+  bottom: -4px;
+  right: 10%;
+}
+
+.btn:hover::before{
+  left: 80%;
+}
+
+.btn:hover::after{
+  right: 80%;
+  
+}
+
+.score{
+  margin-top: 200px;
+  width: 280px;
+  font-size: 500%;
+  background-color: #7f53ac;
+background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+border: 4px solid;
+  color: white;
+  font-weight: 500;
+  text-transform: capitalize;
+  justify-content: center;
+  align-content: center;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 0;
+  
+}
+
+
+.grid {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+ 
+  z-index: 5;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    margin: auto;
+    background-image: url('back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+  }
+  
+  .grid div {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .snake {
+    background-color: blue;
+   
+  }
+  
+  .apple {
+    background-image: url('/css/apple1.png');
+    background-size: cover;
+  }
+  
+  
